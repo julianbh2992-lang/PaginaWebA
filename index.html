@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal del Equipo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Espacio interno</p>
+        <h1>Portal del Equipo</h1>
+      </div>
+      <nav aria-label="Secciones principales">
+        <a href="#avisos">Avisos</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#calendario">Calendario</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="hero-copy">
+          <p class="eyebrow">Informacion actualizada para el trabajo diario</p>
+          <h2 id="titulo-principal">Todo lo importante del equipo en un solo lugar.</h2>
+          <p>
+            Publica novedades, documentos, enlaces y fechas clave para que tus
+            companeros encuentren rapido lo que necesitan.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#avisos">Ver avisos</a>
+            <a class="button secondary" href="#recursos">Abrir recursos</a>
+          </div>
+        </div>
+        <aside class="status-panel" aria-label="Resumen rapido">
+          <p class="panel-title">Resumen de hoy</p>
+          <dl>
+            <div>
+              <dt>Prioridad</dt>
+              <dd>Actualizar procedimiento de solicitudes</dd>
+            </div>
+            <div>
+              <dt>Proxima reunion</dt>
+              <dd>Viernes, 9:00 a. m.</dd>
+            </div>
+            <div>
+              <dt>Responsable</dt>
+              <dd>Equipo Administrativo</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="avisos" class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Novedades</p>
+          <h2>Avisos importantes</h2>
+        </div>
+        <div class="notice-list">
+          <article class="notice-card">
+            <span class="tag urgent">Importante</span>
+            <h3>Nuevo formato para solicitudes internas</h3>
+            <p>
+              Desde esta semana usaremos un formato unico para registrar y
+              hacer seguimiento a solicitudes del area.
+            </p>
+            <time datetime="2026-07-06">Publicado: 6 de julio de 2026</time>
+          </article>
+          <article class="notice-card">
+            <span class="tag">Recordatorio</span>
+            <h3>Reunion semanal del equipo</h3>
+            <p>
+              Revisa los temas pendientes antes de la reunion para avanzar con
+              decisiones claras.
+            </p>
+            <time datetime="2026-07-05">Publicado: 5 de julio de 2026</time>
+          </article>
+          <article class="notice-card">
+            <span class="tag">Actualizacion</span>
+            <h3>Lista de contactos revisada</h3>
+            <p>
+              La informacion de contacto fue organizada para que sea mas facil
+              encontrar responsables por proceso.
+            </p>
+            <time datetime="2026-07-04">Publicado: 4 de julio de 2026</time>
+          </article>
+        </div>
+      </section>
+
+      <section id="recursos" class="section-block two-column">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Acceso rapido</p>
+            <h2>Recursos utiles</h2>
+          </div>
+          <ul class="resource-list">
+            <li>
+              <a href="#" aria-label="Abrir carpeta de documentos del equipo">
+                <span>Documentos del equipo</span>
+                <small>Procedimientos, formatos y guias</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Abrir tablero de seguimiento">
+                <span>Tablero de seguimiento</span>
+                <small>Estado de tareas y responsables</small>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Abrir directorio de contactos">
+                <span>Directorio de contactos</span>
+                <small>Correos, telefonos y roles clave</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="calendario" class="calendar-panel">
+          <p class="panel-title">Fechas clave</p>
+          <ul>
+            <li>
+              <strong>10 jul.</strong>
+              <span>Cierre de novedades de la semana</span>
+            </li>
+            <li>
+              <strong>15 jul.</strong>
+              <span>Entrega de reporte mensual</span>
+            </li>
+            <li>
+              <strong>22 jul.</strong>
+              <span>Capacitacion interna</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-band">
+        <div>
+          <p class="eyebrow">Necesitas publicar algo?</p>
+          <h2>Envia tu informacion para actualizar el portal.</h2>
+        </div>
+        <a class="button primary" href="mailto:equipo@empresa.com">Escribir correo</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Portal del Equipo - Primera version</p>
+      <button id="backToTop" type="button">Volver arriba</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
